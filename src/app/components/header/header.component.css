@@ -1,5 +1,8 @@
 .container {
-     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 20px;
 }
 
 .sidenav {
@@ -23,7 +26,14 @@ img {
 }
 
 .menu {
-     margin: 1rem 0 0 1rem;
+     
      color: white;
      background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(37, 97, 207, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+h1 {
+     margin-top:10px;
+     size: 20rem;
+     font-weight: 500;
+     border-radius: 2rem;
 }

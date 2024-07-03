@@ -5,10 +5,11 @@ import { HomeComponent } from "./components/home/home.component";
 import { TecnicoListComponent } from "./components/tecnico/tecnico-list/tecnico-list.component";
 import { LoginComponent } from "./components/login/login.component";
 
+//Configuração da rotas do app
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  {    
-    //path: 'login', component: NavComponent  //quando o path for login exibir componente NavComponent
+  
+  { 
     path: "", component: NavComponent, children : [      
       { path: 'home', component: HomeComponent },
       { path: 'tecnicos', component: TecnicoListComponent }

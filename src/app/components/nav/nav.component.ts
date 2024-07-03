@@ -8,10 +8,12 @@ import { Component, OnInit } from "@angular/core";
 })
 export class NavComponent implements OnInit {
   //quando o componente for construido cria o router
+  
   constructor(private router: Router) {}
 
   //métodos que iniciam com o programa
+  //navega para a página inicial
   ngOnInit(): void {
-    this.router.navigate(["tecnicos"]);
+    this.router.navigate(["login"]);
   }
 }

@@ -1,11 +1,17 @@
 <mat-drawer-container class="container" autosize>
   <mat-drawer #drawer class="sidenav" mode="side">
+
+    <!-- Imagem do lado esquerdo do menu"-->
     <img src="assets/img/side-image.svg" />
-    <mat-nav-list cglass="nav-list">
+   
+    <!-- Lista de navegacao"-->
+    <mat-nav-list cglass="nav-list"> 
       <a mat-list-item routerLink="home">
         <i class="material-icons">home</i>
         Home
       </a>
+
+      <!-- routerLink == href -->
       <a mat-list-item routerLink="tecnicos">
         <i class="material-icons">account_circle</i>
         Técnico
@@ -26,10 +32,12 @@
   </mat-drawer>
 
   <div class="sidenav-content">
+    
+    <!-- Cabeçalho do app"-->
     <app-header></app-header>
     <button
       type="menu"
-      class="meu mat-elevation-z8"
+      class="menu mat-elevation-z8"
       (click)="drawer.toggle()"
       mat-icon-button
     >

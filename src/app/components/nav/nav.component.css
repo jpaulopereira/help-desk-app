@@ -11,6 +11,13 @@
 img {
      width: 100%;
      height: 7rem;
+
+     /* 
+          8rem: margem superior de 0.8 rem.
+          auto: margem direita automática.
+          1rem: margem inferior de 1 rem.
+          auto: margem esquerda automática.
+      */
      margin: .8rem auto 1rem auto;
 }
 
@@ -23,7 +30,7 @@ img {
 }
 
 .menu {
-     margin: 1rem 0 0 1rem;
+     margin: 1rem 1rem 0.1rem 1rem;
      color: white;
      background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(37, 97, 207, 1) 0%, rgba(0, 212, 255, 1) 100%);
 }
