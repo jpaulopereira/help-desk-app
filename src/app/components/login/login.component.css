@@ -11,13 +11,12 @@
      margin: auto;
      background-color: rgb(235, 235, 235);
      padding: 4rem 1rem;
-     border-radius: 1rem;    
+     border-radius: 1rem;
 }
 
 h1 {
      width: 100%;
      text-align: center;
-
 }
 
 img {
@@ -27,16 +26,15 @@ img {
 }
 
 .full-width {
-     width: 100%;
-     
+     width: 100%;     
 }
-
 
 button {
      margin-top: 1.5rem;
      border-radius: 18px;
-     transition: background-color 0.3s;
-     
+     transition: background-color 0.9s;
+     background-color: rgb(14, 125, 199);
+     color: rgb(255, 255, 255);
 }
 
 mat-icon {
@@ -44,15 +42,17 @@ mat-icon {
 }
 
 button:hover {
-     background-color: rgb(14, 125, 199);
+     background-color: rgb(2, 59, 97);
      border-radius: 18px;
-     color: white;
-     font-weight: bold;
-     
+     color: rgb(255, 255, 255);
+     font-weight: bold;     
 }
-
 
 .mat-label {
      color: #000;     
      
+}
+
+.full-width{
+     width: 100%;
 }
