@@ -30,8 +30,7 @@ export class AuthInterceptor implements HttpInterceptor {
   }
 }
 
-
-//interceptador as requisições HTTP e adiciona o token no header
+//intercepta as requisições HTTP e adiciona o token no header
 export const AuthInterceptorProvider = [
   {
     provide: HTTP_INTERCEPTORS,

@@ -12,7 +12,8 @@ mat-form-field {
 }
 
 button {
-     width: 100%;
+     width: 15%;
+     background-color: rgb(0, 153, 255);
 }
 
 h1 {
@@ -27,4 +28,12 @@ h1 {
 
 .delete {
      color: red;
+}
+
+mat-form-field {
+     width: 100%;
+}
+
+mat-raised-button {
+     width: 30%;
 }
