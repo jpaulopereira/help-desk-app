@@ -11,7 +11,6 @@ export class AuthService {
 
   //O service que faz a autenticação. Não o componente Login
 
-
   //criação de variável jwtService
   jwtService: JwtHelperService = new JwtHelperService;
   
@@ -40,6 +39,10 @@ export class AuthService {
       return !this.jwtService.isTokenExpired(authToken)
     }
     return false;
+  }
+
+  logout() {
+    localStorage.clear();
   }
 
 }
