@@ -42,7 +42,8 @@ export class LoginComponent implements OnInit {
     this.authService.authenticate(this.creds).subscribe(resposta => {     
       //chama o service e pega o token do header, tira o bearer e salva no localStorage
       this.authService.successfullLogin(resposta.headers.get('Authorization').substring(7));
-      this.router.navigate([''])
+      this.toast.success("Usuário logado com sucesso!", "Login");
+      this.router.navigate(['home'])
     },
     () => {
       this.toast.error("Usuário ou senha inválidos!", "Login");     
