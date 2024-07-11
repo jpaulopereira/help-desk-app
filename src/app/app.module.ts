@@ -42,6 +42,7 @@ import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
 import { NgxMaskModule } from 'ngx-mask';
 import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
+import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
 //import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
 //import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
 //import { ClienteCreateComponent } from './components/cliente/cliente-create/cliente-create.component';
@@ -62,7 +63,8 @@ import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecn
     TecnicoListComponent,
     LoginComponent,
     TecnicoCreateComponent,
-    TecnicoUpdateComponent,    
+    TecnicoUpdateComponent,
+    TecnicoDeleteComponent,    
    // HomeComponent,
     //HeaderComponent,
     //TecnicoListComponent,   

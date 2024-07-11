@@ -1,13 +1,13 @@
 <div class="container mat-elevation-z7">
      <form action="" class="form">
-          <h1>Atualizar Técnico</h1>
-          <img src="assets/img/tecnico-create.svg" alt="Atualizar Tecnico">
+          <h1>Deletar Técnico</h1>
+          <img src="assets/img/tecnico-create.svg" alt="Deletar Tecnico">
 
 
           <section class="section">
-               <mat-checkbox (click)="addPerfil(0)" class="checkbox"  name="checkedAdmin">Admin</mat-checkbox>
-               <mat-checkbox (click)="addPerfil(1)" [checked]=true class="checkbox" name="checkedCliente">Cliente</mat-checkbox>
-               <mat-checkbox (click)="addPerfil(2)" class="checkbox"  name="checkedTecnico">Técnico</mat-checkbox>
+               <mat-checkbox [disabled]="true" class="checkbox"  name="checkedAdmin">Admin</mat-checkbox>
+               <mat-checkbox [disabled]="true" class="checkbox"  name="checkedCliente">Cliente</mat-checkbox>
+               <mat-checkbox [disabled]="true" class="checkbox"  name="checkedTecnico">Técnico</mat-checkbox>
           </section>
         
                <mat-form-field class="full-width" appearance="fill">
@@ -15,10 +15,8 @@
                  <input 
                  [(ngModel)]="tecnico.nome"
                  matInput 
-                 placeholder="Nome"
-                 [formControl]="nome"
-                 required
-                 maxlength="50"
+                 [disabled]="true"
+                 [ngModelOptions]="{standalone: true}"     
                  >
                  <mat-icon matSuffix>person</mat-icon>                
                </mat-form-field> 
@@ -28,43 +26,38 @@
                  <input
                  [(ngModel)]="tecnico.cpf"
                  matInput 
-                 placeholder="000.000.000-00"               
-                 [formControl]="cpf"
-                 mask="000.000.000-00"
-                 required
+                 [disabled]="true"
+                 [ngModelOptions]="{standalone: true}"
                  >
                  <mat-icon matSuffix>pin</mat-icon>                
                </mat-form-field>
          
                <mat-form-field class="full-width" appearance="fill">
                  <mat-label>E-Mail:</mat-label>
-                 <input matInput 
+                 <input  
                  [(ngModel)]="tecnico.email"
-                 placeholder="email@email.com"
-                 autocomplete="email"            
-                 [formControl]="email"
-                 required
+                 matInput 
+                 [disabled]="true"
+                 [ngModelOptions]="{standalone: true}"
                  >             
                  <mat-icon matSuffix>email</mat-icon>                
                </mat-form-field>
          
                <mat-form-field class="full-width" appearance="fill">
-                 <mat-label>Senha:</mat-label>
-                  
-                 <!-- atribui o valor do campo ao atributo ngModel -->
+                 <mat-label>Senha:</mat-label> 
                  <input                
-                 [(ngModel)]="tecnico.senha"
-                 type="password" 
+                 [(ngModel)]="tecnico.senha"                                    
                  matInput 
-                 placeholder="*********"               
-                 [formControl]="nome"                
-                 required
+                 [disabled]="true"
+                 [ngModelOptions]="{standalone: true}"
+                 type="password"
                  >
                  <mat-icon matSuffix>lock</mat-icon>                
                </mat-form-field>
 
-               <button (click)="update()" [disabled]="!validaCampos()" class="cadastrar mat-elevation-z4" mat-flat-button>Atualizar</button>
+               <button (click)="delete()" class="cadastrar mat-elevation-z4" mat-flat-button>Deletar</button>
                <button  routerLink="../../" class="cancelar mat-elevation-z4" mat-flat-button>Cancelar</button>
      </form>
 </div>
+
 
