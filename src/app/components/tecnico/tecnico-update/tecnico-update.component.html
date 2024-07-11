@@ -1,6 +1,6 @@
 <div class="container mat-elevation-z7">
      <form action="" class="form">
-          <h1>Cadastrar Técnico</h1>
+          <h1>Atualizar Técnico</h1>
           <img src="assets/img/tecnico-create.svg" alt="Create Tecnico">
 
 
@@ -62,7 +62,8 @@
                  <mat-icon matSuffix>lock</mat-icon>                
                </mat-form-field>
 
-               <button (click)="create()" [disabled]="!validaCampos()" class="cadastrar mat-elevation-z4" mat-flat-button>Cadastrar</button>
-               <button  routerLink="../" class="cancelar mat-elevation-z4" mat-flat-button>Cancelar</button>
+               <button (click)="update()" [disabled]="!validaCampos()" class="cadastrar mat-elevation-z4" mat-flat-button>Atualizar</button>
+               <button  routerLink="../../" class="cancelar mat-elevation-z4" mat-flat-button>Cancelar</button>
      </form>
 </div>
+
