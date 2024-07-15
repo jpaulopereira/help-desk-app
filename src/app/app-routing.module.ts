@@ -8,6 +8,7 @@ import { AuthGuard } from "./auth/auth.guard";
 import { TecnicoCreateComponent } from "./components/tecnico/tecnico-create/tecnico-create.component";
 import { TecnicoUpdateComponent } from "./components/tecnico/tecnico-update/tecnico-update.component";
 import { TecnicoDeleteComponent } from "./components/tecnico/tecnico-delete/tecnico-delete.component";
+import { ChamadoListComponent } from "./components/chamados/chamado-list/chamado-list.component";
 
 //Configuração da rotas do app
 const routes: Routes = [
@@ -22,7 +23,9 @@ const routes: Routes = [
       { path: 'tecnicos/create', component: TecnicoCreateComponent },
       //informação do id do tecnico que será atualizado, passando uma variável de "path"
       { path: 'tecnicos/update/:id', component: TecnicoUpdateComponent },
-      { path: 'tecnicos/delete/:id', component: TecnicoDeleteComponent }
+      { path: 'tecnicos/delete/:id', component: TecnicoDeleteComponent },
+
+      { path: 'chamados', component: ChamadoListComponent },
     ]
   }
 ];
