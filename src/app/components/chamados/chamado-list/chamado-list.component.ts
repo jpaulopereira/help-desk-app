@@ -62,6 +62,16 @@ export class ChamadoListComponent implements OnInit {
     }
   }
 
+  getPrioridadeClass(status: any): string {
+    if (status == '0') {
+      return 'prioridade-baixa';
+    } else if (status == '1') {
+      return 'prioridade-media';
+    } else {
+      return 'prioridade-alta';
+    }
+  }  
+
   orderByStatus(status: any): void {
     let list: Chamado[] = []
     this.ELEMENTE_DATA.forEach(element => {

@@ -1,0 +1,63 @@
+<div class="container mat-elevation-z7">
+     <form action="" class="form">
+          <h1>Deletar Cliente</h1>
+          <img src="assets/img/chamado-create.svg" alt="Deletar Cliente">
+
+
+          <section class="section">
+               <mat-checkbox [disabled]="true" class="checkbox"  name="checkedAdmin">Admin</mat-checkbox>
+               <mat-checkbox [disabled]="true" class="checkbox"  name="checkedCliente">Cliente</mat-checkbox>
+               <mat-checkbox [disabled]="true" class="checkbox"  name="checkedCliente">Cliente</mat-checkbox>
+          </section>
+        
+               <mat-form-field class="full-width" appearance="fill">
+                 <mat-label>Nome:</mat-label>
+                 <input 
+                 [(ngModel)]="cliente.nome"
+                 matInput 
+                 [disabled]="true"
+                 [ngModelOptions]="{standalone: true}"     
+                 >
+                 <mat-icon matSuffix>person</mat-icon>                
+               </mat-form-field> 
+           
+               <mat-form-field class="full-width" appearance="fill">
+                 <mat-label>CPF:</mat-label>
+                 <input
+                 [(ngModel)]="cliente.cpf"
+                 matInput 
+                 [disabled]="true"
+                 [ngModelOptions]="{standalone: true}"
+                 >
+                 <mat-icon matSuffix>pin</mat-icon>                
+               </mat-form-field>
+         
+               <mat-form-field class="full-width" appearance="fill">
+                 <mat-label>E-Mail:</mat-label>
+                 <input  
+                 [(ngModel)]="cliente.email"
+                 matInput 
+                 [disabled]="true"
+                 [ngModelOptions]="{standalone: true}"
+                 >             
+                 <mat-icon matSuffix>email</mat-icon>                
+               </mat-form-field>
+         
+               <mat-form-field class="full-width" appearance="fill">
+                 <mat-label>Senha:</mat-label> 
+                 <input                
+                 [(ngModel)]="cliente.senha"                                    
+                 matInput 
+                 [disabled]="true"
+                 [ngModelOptions]="{standalone: true}"
+                 type="password"
+                 >
+                 <mat-icon matSuffix>lock</mat-icon>                
+               </mat-form-field>
+
+               <button (click)="delete()" class="cadastrar mat-elevation-z4" mat-flat-button>Deletar</button>
+               <button  routerLink="../../" class="cancelar mat-elevation-z4" mat-flat-button>Cancelar</button>
+     </form>
+</div>
+
+

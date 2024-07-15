@@ -1,0 +1,43 @@
+.container {
+     width: 25rem;
+     margin: auto;
+     padding: 1rem 1rem 3rem 1rem;
+     border-radius: .6rem;
+ }
+ 
+ img {
+      width: 90%;
+      height: auto;
+      
+ }
+ 
+ .full-width {
+      width: 100%;
+ }
+ 
+ .section {
+     margin-bottom: 1rem;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .checkbox {
+      margin: 0 10px;
+      font-size: 1rem;   
+ }
+ 
+ .cadastrar {
+    width: 100%;
+    margin-top: 0.4rem;
+    background-color: rgb(0, 153, 255);
+    color: white;
+ }
+ 
+ .cancelar {
+      width: 100%;
+      margin-top: 0.4rem;
+      background-color: rgb(236, 236, 236);
+      color: rgb(218, 11, 11);
+   }
+ 
+ 
