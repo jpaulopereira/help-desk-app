@@ -1,27 +1,43 @@
-# Helpdesk
+Helpdesk
+Este projeto foi gerado com Angular CLI versão 12.2.1.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
+Descrição do Projeto
+Aplicação front-end para gerenciamento de um sistema de helpdesk, permitindo cadastro, listagem, edição e exclusão de dados com validação de campos. Utiliza Angular, Angular Material, TypeScript e Bootstrap.
 
-## Development server
+Funcionalidades
+Cadastro de Dados: Formulário para inserir novas informações.
+Listagem de Dados: Exibição de dados com opções de filtragem e busca.
+Edição de Dados: Interface para modificar informações existentes.
+Exclusão de Dados: Funcionalidade para remover registros com confirmação.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Imagens
+Tela de Cadastro
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Descrição: Interface para cadastro de novos dados, mostrando campos e validações.
 
-## Build
+Tela de Listagem
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Descrição: Interface de listagem com opções de filtragem e busca.
 
-## Running unit tests
+Tela de Exclusão
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Descrição: Interface para exclusão de dados com confirmação de ação.
 
-## Running end-to-end tests
+Servidor de Desenvolvimento
+Execute ng serve para iniciar o servidor de desenvolvimento. Navegue até http://localhost:4200/. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Gerar Código
+Execute ng generate component component-name para gerar um novo componente. Você também pode usar ng generate directive|pipe|service|class|guard|interface|enum|module.
 
-## Further help
+Build
+Execute ng build para construir o projeto. Os artefatos da construção serão armazenados no diretório dist/.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Testes Unitários
+Execute ng test para executar os testes unitários usando Karma.
+
+Testes End-to-End
+Execute ng e2e para executar testes end-to-end usando uma plataforma de sua escolha. Para usar este comando, você precisa primeiro adicionar um pacote que implemente as capacidades de teste end-to-end.
+
+Ajuda Adicional
+Para obter mais ajuda sobre o Angular CLI, use ng help ou consulte a Visão Geral e Referência de Comandos do Angular CLI.
