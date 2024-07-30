@@ -20,13 +20,12 @@ Exclusão de Dados: Funcionalidade para remover registros com confirmação.
   <img src="https://github.com/user-attachments/assets/af70972c-bd46-47e5-8664-e8b522c9aec8" width="50%" />
 </div>
 
-<p align="center"> Telas de Listagem</p>
+<p align="center"> Telas de Listagem com paginação</p>
 <div align="center">
   <div style="display: flex; justify-content: center; gap: 10px;">
     <img src="https://github.com/user-attachments/assets/0dc73012-11e2-43a6-b61a-e824f375aecb" width="100%" />
     <img src="https://github.com/user-attachments/assets/1aca31e2-d2c7-4759-94a2-859fbf60097a" width="100%" />
-  </div>
-  <p align="center">Descrição: Interface para listagem de registros, com visualização detalhada.</p>
+  </div> 
 </div>
 
 ## Servidor de Desenvolvimento
